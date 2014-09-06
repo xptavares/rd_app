@@ -1,8 +1,10 @@
-<h1>Listing leads</h1>
+<h1 class="page-header">Listing leads</h1>
 
-<%= link_to 'New Lead helper', new_api_config_lead_path(@api_config) %>
+<div class="well">
+<%= link_to 'New Lead', new_api_config_lead_path(@api_config), class: "btn btn-primary"  %>
+</div>
 <br>
-<table>
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th>Title</th>

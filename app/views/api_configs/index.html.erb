@@ -1,6 +1,10 @@
-<h1>Listing api_configs</h1>
+<h1 class="page-header">Listing api_configs</h1>
 
-<table>
+<div class="well">
+<%= link_to 'New Api config', new_api_config_path, class: "btn btn-primary" %>
+</div>
+
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th>Username</th>
@@ -20,7 +24,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Api config', new_api_config_path %>
