@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 
-gem 'rd_api', github: 'xptavares/rd_api', branch: 'master'
+gem 'rd_api', '0.0.2', github: 'xptavares/rd_api', branch: 'master'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @api_config.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @api_config.password %>
+</p>
+
+<p>
+  <strong>Security token:</strong>
+  <%= @api_config.security_token %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @api_config.client_id %>
+</p>
+
+<p>
+  <strong>Client secret:</strong>
+  <%= @api_config.client_secret %>
+</p>
+
+<%= link_to 'Edit', edit_api_config_path(@api_config) %> |
+<%= link_to 'Back', api_configs_path %>

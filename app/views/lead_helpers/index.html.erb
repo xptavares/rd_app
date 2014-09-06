@@ -1,0 +1,35 @@
+<h1>Listing lead_helpers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Phone</th>
+      <th>Company</th>
+      <th>Email,</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lead_helpers.each do |lead_helper| %>
+      <tr>
+        <td><%= lead_helper.title %></td>
+        <td><%= lead_helper.phone %></td>
+        <td><%= lead_helper.company %></td>
+        <td><%= lead_helper.email, %></td>
+        <td><%= lead_helper.first_name %></td>
+        <td><%= lead_helper.last_name %></td>
+        <td><%= link_to 'Show', lead_helper %></td>
+        <td><%= link_to 'Edit', edit_lead_helper_path(lead_helper) %></td>
+        <td><%= link_to 'Destroy', lead_helper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lead helper', new_lead_helper_path %>
