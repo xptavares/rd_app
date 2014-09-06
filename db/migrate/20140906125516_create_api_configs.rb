@@ -5,7 +5,7 @@ class CreateApiConfigs < ActiveRecord::Migration
       t.string :password
       t.string :security_token
       t.string :client_id
-      t.stri :client_secret
+      t.string :client_secret
 
       t.timestamps
     end

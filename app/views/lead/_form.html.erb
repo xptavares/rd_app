@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_tag(api_config_lead_index_path) do -%>
+  <div class="field">
+    <%= label_tag :Title %><br>
+    <%= text_field_tag :Title %>
+  </div>
+  <div class="field">
+    <%= label_tag :Phone %><br>
+    <%= text_field_tag :Phone %>
+  </div>
+  <div class="field">
+    <%= label_tag :Company %><br>
+    <%= text_field_tag :Company %>
+  </div>
+  <div class="field">
+    <%= label_tag :Email %><br>
+    <%= text_field_tag :Email %>
+  </div>
+  <div class="field">
+    <%= label_tag :FirstName %><br>
+    <%= text_field_tag :FirstName %>
+  </div>
+  <div class="field">
+    <%= label_tag :LastName %><br>
+    <%= text_field_tag :LastName %>
+  </div>
+  <div class="actions">
+    <%= submit_tag 'Save' %>
+  </div>
+<% end %>
