@@ -1,4 +1,9 @@
 rd_app
 ======
 
-Rp Web App
+This is web app form Rd integration with SalesForce.
+
+How to use
+======
+
+Use api_config for config SalesForce token.
